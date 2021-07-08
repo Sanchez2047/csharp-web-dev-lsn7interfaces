@@ -13,12 +13,12 @@ namespace IceCreamShop
 
             // TODO: Use a Comparer class to sort the 'flavors' array alphabetically by the 'name'
             //  field.
-            //foreach (Flavor flavor in availableFlavors)
-            //{
-            //    Console.WriteLine(flavor.Name);
-            //}
+            foreach (Flavor flavor in availableFlavors)
+            {
+                Console.WriteLine(flavor.Name);
+            }
             FlavorComparer comparer = new FlavorComparer();
-            availableFlavors.Sort(comparer);
+            //availableFlavors.Sort(comparer);
 
 
             // TODO: Use a Comparator class to sort the 'cones' array in increasing order by the 'cost'
@@ -27,21 +27,21 @@ namespace IceCreamShop
             //{
             //    Console.WriteLine($"{cone.Name}: ${cone.Cost}");
             //}
-            availableCones.Sort(new ConeComparer());
+            //availableCones.Sort(new ConeComparer());
 
             // TODO: Print the 'flavors' and 'cones' lists (in a clear manner) to verify the sorting.
-            Console.WriteLine("<-----FLAVORS----->\n");
-            
-            foreach (Flavor flavor in availableFlavors)
-            {
-                Console.WriteLine(flavor.Name);
-            }
-            Console.WriteLine("\n<-----CONES----->\n");
+            //Console.WriteLine("\n<-----SORTED FLAVORS----->\n");
 
-            foreach (Cone cone in availableCones)
-            {
-                Console.WriteLine($"{cone.Name}: ${cone.Cost}");
-            }
+            //foreach (Flavor flavor in availableFlavors)
+            //{
+            //    Console.WriteLine(flavor.Name);
+            //}
+            //Console.WriteLine("\n<-----SORTED CONES----->\n");
+
+            //foreach (Cone cone in availableCones)
+            //{
+            //    Console.WriteLine($"{cone.Name}: ${cone.Cost}");
+            //}
 
             Console.WriteLine("\n<-----SORTED BY ALLERGENS----->\n");
             availableFlavors.Sort(comparer);
